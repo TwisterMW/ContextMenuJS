@@ -1,4 +1,3 @@
-```javascript
 var ContextualMenu = function(menuList, menuLinks){
 	var x;
 	var y;
@@ -97,4 +96,3 @@ var ContextualMenu = function(menuList, menuLinks){
 
 	this.__construct();
 }
-```
