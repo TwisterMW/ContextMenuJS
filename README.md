@@ -5,7 +5,7 @@ Library for displaying a customizable context menu on right-click mouse button
 
 Include library:
 ```html
-<script src="/path-to-library/contextualMenu.js></script>
+<script src="/path-to-library/contextualMenu.js"></script>
 ```
 
 Declare icons and labels for contextual menu options
