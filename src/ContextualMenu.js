@@ -87,7 +87,7 @@ var ContextualMenu = function(menuList, menuLinks){
 		var cssOutput = ".context-menu-container{z-index:999999;width:250px;height:" + (Object.keys(this.menu_list).length * 41) + "px;box-shadow:0px 0px 5px #666;transition:opacity 0.3s ease-in-out;background:#fff;}";
 		cssOutput += "\n\t.cm-hidden{opacity:0}";
 		cssOutput += "\n\n.cm-option-list{margin:0;padding:0;}";
-		cssOutput += "\n\t.cm-option-list li{list-style:none;margin:0;padding:5px 10px;height:30px;border-bottom:1px solid #dfdfdf;transition:background 0.1s ease-in-out, color 0.1s ease-in-out;background:#fff;color:#333;vertical-align:top;}";
+		cssOutput += "\n\t.cm-option-list li{list-style:none;margin:0;padding:10px 10px 0px 10px;height:30px;border-bottom:1px solid #dfdfdf;transition:background 0.1s ease-in-out, color 0.1s ease-in-out;background:#fff;color:#333;vertical-align:top;}";
 		cssOutput += "\n\t\t.cm-option-list li:hover{background:#228dd3;color:#fff;cursor:pointer;}";
 		stylesheet.innerHTML = cssOutput;
 
