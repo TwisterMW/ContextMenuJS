@@ -34,5 +34,5 @@ var mlinks = Array(
 
 Finally only need to instantiate the ContextMenu object like:
 ```javascript
-var cm = new ContextualMenu(mlis, mlinks);
+var cm = new ContextualMenu(mlist, mlinks);
 ```
