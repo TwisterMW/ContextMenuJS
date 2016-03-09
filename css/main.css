@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Ropa+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+body{
+	margin:0;
+	padding:0;
+	background-size:cover;
+	background-attachment:fixed;
+	font-family:'Ropa Sans', sans-serif;
+	background-image:url(http://s11.postimg.org/mqsm8aykz/image.jpg);
+}
+
+/* Page Navi */
+#welcome-container{
+	width:400px;
+	color:#fefefe;
+	padding:10px 20px;
+	font-size:20px;
+	text-align:center;
+	background:rgba(0, 0, 0, 0.5);
+	margin:100px auto 0 auto;
+}
+.bold-title{
+	font-family:'Oswald', sans-serif;
+}
+.non-bold-title{
+	font-family:'Roboto Condensed', sans-serif;
+}
+
+/* Defaults */
+h1{
+	padding:0;
+	color:#fefefe;
+	margin:10px 0;
+	font-size:44px;
+}
