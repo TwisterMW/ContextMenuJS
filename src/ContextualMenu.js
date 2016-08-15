@@ -25,28 +25,28 @@ var ContextualMenu = function(menuList, menuLinks){
 		});
 
 		document.addEventListener("click", function(event){
-			if(self.shown == true){
+			if(self.shown === true){
 				self.showContextualMenu();
 			}
 		});
 
 		this.loadCSS();
-	}
+	};
 
 	this.showContextualMenu = function(){
-		if(this.shown == false){
-			var cmcontainer = document.createElement("div");
+		var cmcontainer;
+
+		if(this.shown === false){
+			cmcontainer = document.createElement("div");
 			cmcontainer.id = "cmcontainer";
 			cmcontainer.className = "context-menu-container cm-hidden";
 			cmcontainer.style.position = "absolute";
 
-			((this.y_limit + window.scrollY) > (window.scrollY + this.y + (Object.keys(this.menu_list).length * 41)))
-				? cmcontainer.style.top = this.y + document.body.scrollTop + "px"
-				: cmcontainer.style.top = this.y + document.body.scrollTop - (Object.keys(this.menu_list).length * 41) + "px";
+			cmcontainer.style.top = ((this.y_limit + window.scrollY) > (window.scrollY + this.y + (Object.keys(this.menu_list).length * 41))) ? String(this.y + document.body.scrollTop).concat("px")
+				: String((this.y + document.body.scrollTop - (Object.keys(this.menu_list).length * 41))).concat("px");
 
-			((this.x_limit + window.scrollX) > (window.scrollX + this.x + 250))
-				? cmcontainer.style.left = this.x + "px"
-				: cmcontainer.style.left = this.x - 250 + "px";
+			cmcontainer.style.left = ((this.x_limit + window.scrollX) > (window.scrollX + this.x + 250)) ? String(this.x).concat("px")
+				: String((this.x - 250)).concat("px");
 
 			var ul = document.createElement("ul");
 			ul.className = "cm-option-list";
@@ -71,13 +71,13 @@ var ContextualMenu = function(menuList, menuLinks){
 
 			this.shown = true;
 		}else{
-			var cmcontainer = document.getElementById("cmcontainer");
+			cmcontainer = document.getElementById("cmcontainer");
 			cmcontainer.classList.add("cm-hidden");
 
 			document.body.removeChild(cmcontainer);
 			this.shown = false;
 		}
-	}
+	};
 
 	this.loadCSS = function(){
 		var stylesheet = document.createElement("style");
@@ -92,7 +92,7 @@ var ContextualMenu = function(menuList, menuLinks){
 		stylesheet.innerHTML = cssOutput;
 
 		document.getElementsByTagName("head")[0].appendChild(stylesheet);
-	}
+	};
 
 	this.__construct();
-}
+};

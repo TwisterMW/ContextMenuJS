@@ -6,7 +6,7 @@ var mlist = {
     "close": "Cerrar"
 };
 
-var mlinks = Array(
+var mlinks = new Array(
     "alert('Seleccionada la opción atrás')",
     "alert('Seleccionada la opción Deshacer')",
     "alert('Seleccionada la opción Recargar')",

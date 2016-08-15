@@ -1,14 +1,14 @@
+[![Build Status](https://travis-ci.org/TwisterMW/js-context-menu.svg?branch=twistermw%2Fgeneralreview)](https://travis-ci.org/TwisterMW/js-context-menu)
+
 # ContextMenuJS
 Library for displaying a customizable context menu on right-click mouse button
 
-##USAGE
+## REQUIREMENTS
+- FontAwesome (Included by bower)
+- Node
+- NPM
 
-Include libraries (FontAwesome required):
-```html
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-<script src="/path-to-library/contextualMenu.js"></script>
-```
-
+## USAGE
 Declare icons and labels for contextual menu options
 ```javascript
 var mlist = {
@@ -37,3 +37,6 @@ Finally only need to instantiate the ContextMenu object like:
 ```javascript
 var cm = new ContextualMenu(mlist, mlinks);
 ```
+
+## TESTING
+You can run test suite by running: ```karma start karma.conf.js```

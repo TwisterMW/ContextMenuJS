@@ -1,0 +1,21 @@
+{
+  "name": "js-context-menu",
+  "description": "Library for displaying a customizable context menu on right-click mouse button",
+  "main": "index.html",
+  "authors": [
+    "TwisterMW <marc.hernandez@twiscript.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/TwisterMW/angular-generator",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dist/",
+    "docs/",
+    ".tmp"
+  ],
+  "dependencies": {
+    "components-font-awesome": "^4.6.3"
+  }
+}
