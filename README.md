@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/TwisterMW/js-context-menu.svg?branch=twistermw%2Fgeneralreview)](https://travis-ci.org/TwisterMW/js-context-menu)
 
+[![npm version](https://badge.fury.io/js/js-context-menu.svg)](https://badge.fury.io/js/js-context-menu)
+
 # ContextMenuJS
 Library for displaying a customizable context menu on right-click mouse button
 
